@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         if (phoneNr == null)
             return false;
         else return
-                phoneNr.matches("[0-9]");
+                phoneNr.matches("^[0-9]+$");
     };
 
 
