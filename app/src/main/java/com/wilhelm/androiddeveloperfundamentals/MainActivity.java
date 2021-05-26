@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         if (phoneNr == null)
             return false;
         else return
-                phoneNr.matches("[a-zA-Z_]*");
+                phoneNr.matches("[0-9]");
     };
 
 
@@ -43,12 +43,10 @@ public class MainActivity extends AppCompatActivity {
                 emailText.setError("Fill in E-mail!");
             else
                 emailText.setError(null);
-
-            if (isNumeric.test(phoneNr))
+            if (!isNumeric.test(phoneNr))
                 phoneNumber.setError("Fill in Phone");
             else
                 phoneNumber.setError(null);
-
             if (!checkBox.isChecked()) {
                 //checkBox.setError("Check Box");
                 Toast.makeText(MainActivity.this, "Check checkBox", Toast.LENGTH_LONG).show();

@@ -12,7 +12,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/login"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FB9D85"
+        android:textStyle="bold" />
 
 
     <EditText
@@ -22,7 +24,8 @@
         android:layout_below="@id/loginText"
         android:layout_marginTop="16dp"
         android:hint="@string/email"
-        android:inputType="textEmailAddress"/>
+        android:inputType="textEmailAddress"
+        />
 
     <EditText
         android:id="@+id/phoneText"
@@ -30,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/emailText"
         android:hint="@string/phone"
-        android:inputType="phone"/>
+      />
 
     <CheckBox
         android:id="@+id/checkbox"
@@ -44,6 +47,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/checkbox"
+        android:backgroundTint="#4054B2"
+        android:padding="10dp"
         android:text="@string/submit" />
 
 </RelativeLayout>
